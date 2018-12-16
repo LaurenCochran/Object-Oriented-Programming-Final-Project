@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="85.0" prefWidth="600.0" text="MONEY MANAGER" textFill="#00fff9ba">
+         <font>
+            <Font name="Luna" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutY="158.0" mnemonicParsing="false" onAction="#goToMoneyManager" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: azure;" text="START" textFill="#00fff6ba">
+         <font>
+            <Font name="Luna" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="dIYButton" layoutX="300.0" layoutY="158.0" mnemonicParsing="false" onAction="#goToDIY" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: azure;" text="DO IT YOURSELF" textFill="#00fff6ba">
+         <font>
+            <Font name="Luna" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutButton" layoutY="282.0" mnemonicParsing="false" onAction="#goToAbout" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: azure;" text="ABOUT" textFill="#00fff6ba">
+         <font>
+            <Font name="Luna" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="300.0" layoutY="282.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: azure;" text="EXIT" textFill="#00fff6ba">
+         <font>
+            <Font name="Luna" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

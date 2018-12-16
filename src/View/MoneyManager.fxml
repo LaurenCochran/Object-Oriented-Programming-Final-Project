@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MoneyManagerController">
+   <children>
+      <ImageView fitHeight="198.0" fitWidth="244.0" layoutX="272.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/moneyMan.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="29.0" prefWidth="300.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleClear" text="Clear" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="fileArea" layoutY="29.0" prefHeight="421.0" prefWidth="300.0" />
+      <TextField fx:id="moneyAmount" layoutX="304.0" layoutY="205.0" prefHeight="40.0" prefWidth="145.0" promptText="MONEY AMOUNT">
+         <font>
+            <Font name="Luna" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="aboutInfo" layoutX="458.0" layoutY="205.0" prefHeight="40.0" prefWidth="145.0" promptText="FOR WHAT?">
+         <font>
+            <Font name="Luna" size="12.0" />
+         </font></TextField>
+      <Button fx:id="additionButton" layoutX="300.0" layoutY="269.0" mnemonicParsing="false" onAction="#additionButton" prefHeight="27.0" prefWidth="100.0" text="ADD">
+         <font>
+            <Font name="Luna" size="12.0" />
+         </font></Button>
+      <Button fx:id="subtractionButton" layoutX="405.0" layoutY="269.0" mnemonicParsing="false" onAction="#subtractionButton" prefHeight="38.0" prefWidth="100.0" text="SUBTRACT">
+         <font>
+            <Font name="Luna" size="12.0" />
+         </font></Button>
+      <Button fx:id="totalButton" layoutX="509.0" layoutY="269.0" mnemonicParsing="false" onAction="#totalButton" prefHeight="27.0" prefWidth="100.0" text="TOTAL">
+         <font>
+            <Font name="Luna" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="113.0" fitWidth="145.0" layoutX="404.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" rotate="-4.4">
+         <image>
+            <Image url="@../images/BUBBLE.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="302.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER A DOLLAR AMOUNT" textAlignment="CENTER" wrappingWidth="150.0">
+         <font>
+            <Font name="Luna" size="8.0" />
+         </font></Text>
+      <Text layoutX="456.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECORD WHERE THE MONEY CAME FROM OR WAS SPENT ON" textAlignment="CENTER" wrappingWidth="150.0">
+         <font>
+            <Font name="Luna" size="7.0" />
+         </font></Text>
+      <Button fx:id="goBackButton" layoutX="478.0" layoutY="389.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: AZURE;" text="GO BACK">
+         <font>
+            <Font name="Luna" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

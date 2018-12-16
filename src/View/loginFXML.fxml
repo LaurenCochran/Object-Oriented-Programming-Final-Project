@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginPageController">
+   <children>
+      <ImageView fitHeight="237.0" fitWidth="268.0" layoutX="-84.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/moneyMan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loginImage1" blendMode="COLOR_BURN" fitHeight="90.0" fitWidth="80.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" rotate="-12.3">
+         <image>
+            <Image url="@../images/loginPic.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="64.0" layoutY="60.0" prefHeight="80.0" prefWidth="501.0" text="PLEASE LOG-IN:" textFill="#00fff9ba">
+         <font>
+            <Font name="Luna" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="loginImage2" blendMode="COLOR_BURN" fitHeight="90.0" fitWidth="90.0" layoutX="498.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="18.4">
+         <image>
+            <Image url="@../images/loginPic.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="181.0" layoutY="190.0" prefHeight="42.0" prefWidth="268.0" promptText="USERNAME">
+         <font>
+            <Font name="Luna" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="377.0" layoutY="295.0" mnemonicParsing="false" onAction="#loginPress" prefHeight="33.0" prefWidth="72.0" text="LOG-IN">
+         <font>
+            <Font name="Luna" size="11.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="181.0" layoutY="243.0" prefHeight="42.0" prefWidth="268.0" promptText="PASSWORD">
+         <font>
+            <Font name="Luna" size="13.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="50.0" layoutY="5.0" prefHeight="54.0" prefWidth="501.0" text="MONEY MANAGER" textFill="#00fff9ba">
+         <font>
+            <Font name="Luna" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="181.0" layoutY="350.0" prefHeight="35.0" prefWidth="268.0" textFill="#ff0606" />
+      <ImageView fitHeight="114.0" fitWidth="147.0" layoutX="37.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" rotate="-12.1">
+         <image>
+            <Image url="@../images/BUBBLE2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

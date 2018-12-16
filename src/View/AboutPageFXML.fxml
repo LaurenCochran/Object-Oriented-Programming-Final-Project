@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AboutPageController">
+   <children>
+      <Button fx:id="goBack" layoutX="441.0" layoutY="369.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="63.0" prefWidth="145.0" style="-fx-background-color: azure;" text="GO BACK">
+         <font>
+            <Font name="Luna" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="398.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/me.JPG" />
+         </image>
+      </ImageView>
+      <Text layoutX="36.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My name is Lauren, and I'm a sophmore. As you can see by picture, I like cats. I haven't quit hit crazy cat lady status, but I have the rest of my life to do that. Beside that, I want to work with apps in the future or work for the FBI in someway." wrappingWidth="328.21875">
+         <font>
+            <Font name="Apple Braille" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#1a1b1b" layoutX="36.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As for this project, I created it because ever since I got to college and got a job, I have just been keeping track of how much I've made and spent by using the notes on my laptop. It's definitely not the most efficient way, and because of this I usually forgot to enter aything in, and I end up having to go back through my credit card and debit card history. I think this app would help with my problem and while there are many budgeting apps out there, they seem more geared towards someone who is not in college." wrappingWidth="328.21875">
+         <font>
+            <Font name="Apple Braille" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
